@@ -3,7 +3,7 @@ import React from 'react'
 const DashboardLoyout = () => {
   return (
     <div>
-      Layout
+     <h1>dashboar Layout</h1>
     </div>
   )
 }
