@@ -1,10 +1,24 @@
+
 import React from 'react'
+import Sidebar from '../component/Sidebar'
+import { Outlet } from 'react-router-dom'
 
 const DashboardLoyout = () => {
   return (
-    <div>
-     <h1>dashboar Layout</h1>
-    </div>
+    <>
+     <div className='flex'>
+      <div>
+
+        <Sidebar/>
+      </div>
+      <div>
+
+        Main content
+
+        <Outlet/>
+      </div>
+     </div>
+    </>
   )
 }
 

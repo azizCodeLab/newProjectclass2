@@ -9,8 +9,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let name = "ali";
-    let pwd = "1234";
+    let name = "ali@gmail.com";
+    let pwd = "123";
     if (username == name && password == pwd) {
         localStorage.setItem("isLogin" , "yes")
       navigate("/dashboard");
