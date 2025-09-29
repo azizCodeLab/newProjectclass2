@@ -6,6 +6,8 @@ const Product = () => {
   const [product,setProduct] =useState([])
   console.log(product);
 
+
+  // Delete function
   const deleteitem=(id)=>{
        axios.delete(`https://fakestoreapi.com/products/${id}`)
        .then((res)=>console.log(res.data)
