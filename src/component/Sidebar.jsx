@@ -43,7 +43,7 @@ const Sidebar = () => {
               }`}
             >
               <div className="flex items-center gap-3">
-               <Link to={item.path}>
+               <Link className="flex gap-2" to={item.path}>
                 <Icon size={18} />
                 <span className="text-sm font-medium">{item.name}</span>
                </Link>

@@ -11,12 +11,12 @@ const Login = () => {
     e.preventDefault();
     let name = "ali@gmail.com";
     let pwd = "123";
-    if (username == name && password == pwd) {
-        localStorage.setItem("isLogin" , "yes")
-      navigate("/dashboard");
-    } else {
-      setError("user credential is not vaild");
-    }
+    // if (username == name && password == pwd) {
+    //     localStorage.setItem("isLogin" , "yes")
+    //   navigate("/dashboard");
+    // } else {
+    //   setError("user credential is not vaild");
+    // }
   };
 
   return (

@@ -7,16 +7,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    let login = localStorage.getItem("isLogin");
-    if (login === "yes") {
-      setIsLogin(true);
-      navigate("/dashboard");
-    } else {
-      setIsLogin(false);
-      navigate("/");
-    }
-  }, [isLogin, navigate]);
+  // useEffect(() => {
+  //   let login = localStorage.getItem("isLogin");
+  //   if (login === "yes") {
+  //     setIsLogin(true);
+  //     navigate("/dashboard");
+  //   } else {
+  //     setIsLogin(false);
+  //     navigate("/");
+  //   }
+  // }, [isLogin, navigate]);
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -35,15 +35,15 @@ const Navbar = () => {
             <Link to="/dashboard" className="text-gray-700 hover:text-indigo-600">
               Dashboard
             </Link>
-            {isLogin ? (
+           
               <Link to="/logout" className="text-gray-700 hover:text-red-600">
                 Logout
               </Link>
-            ) : (
+       
               <Link to="/" className="text-gray-700 hover:text-green-600">
                 Login
               </Link>
-            )}
+        
           </div>
 
           {/* Search Box */}
@@ -84,7 +84,7 @@ const Navbar = () => {
           >
             Dashboard
           </Link>
-          {isLogin ? (
+          {/* {isLogin ? (
             <Link
               to="/logout"
               className="block text-gray-700 hover:text-red-600"
@@ -100,7 +100,7 @@ const Navbar = () => {
             >
               Login
             </Link>
-          )}
+          )} */}
 
           {/* Search in mobile */}
           <div className="flex items-center space-x-2 mt-3">

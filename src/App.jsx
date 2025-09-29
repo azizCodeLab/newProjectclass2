@@ -19,7 +19,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path='/logout' element={<Logout/>}/>
-        <Route path='/dashboard' element={<ProtectRoute><DashboardLoyout/></ProtectRoute>}>
+        {/* <Route path='/dashboard' element={<ProtectRoute><DashboardLoyout/></ProtectRoute>}> */}
+        <Route path='/dashboard' element={<DashboardLoyout/>}>
            <Route  index   element={<DashboardHome/>}/>
            <Route path='about'   element={<About/>}/>
            <Route  path='product'  element={<Product/>}/>
