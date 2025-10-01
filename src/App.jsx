@@ -10,6 +10,7 @@ import DashboardHome from '../src/pages/dashboard/DashboardHome'
 import About from '../src/pages/dashboard/About'
 import Product from '../src/pages/dashboard/Product'
 import Setting from '../src/pages/dashboard/Setting'
+import Create from './component/Create'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
            <Route  index   element={<DashboardHome/>}/>
            <Route path='about'   element={<About/>}/>
            <Route  path='product'  element={<Product/>}/>
+           <Route  path='createproduct'  element={<Create/>}/>
            <Route path='setting'   element={<Setting/>}/>
         </Route>
         <Route path='*' element={<NotFound/>}/>

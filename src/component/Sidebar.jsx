@@ -10,6 +10,7 @@ import {
   FileText,
   Bell,
   Settings,
+  SquarePlus
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -18,6 +19,7 @@ const Sidebar = () => {
     { name: "Overview", icon: LayoutDashboard, path:"/dashboard/" },
     { name: "About", icon: BarChart3, active: true, path:"/dashboard/about" },
     { name: "Products", icon: Box, path:"/dashboard/product" },
+    { name: "Create Product", icon: SquarePlus, path:"/dashboard/createproduct" },
     { name: "Setting", icon: Users,path:"/dashboard/setting" },
     { name: "Orders", icon: ShoppingCart, badge: 8 },
     { name: "Marketing", icon: Megaphone },

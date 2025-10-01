@@ -40,9 +40,9 @@ const Navbar = () => {
                 Logout
               </Link>
        
-              <Link to="/" className="text-gray-700 hover:text-green-600">
+              {/* <Link to="/" className="text-gray-700 hover:text-green-600">
                 Login
-              </Link>
+              </Link> */}
         
           </div>
 
